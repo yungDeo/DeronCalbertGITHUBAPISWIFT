@@ -1,0 +1,6 @@
+framework module Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests {
+  umbrella header "Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

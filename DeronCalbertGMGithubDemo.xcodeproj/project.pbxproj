@@ -15,6 +15,9 @@
 		0208EB3D25B3878A00FBD4C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0208EB3B25B3878A00FBD4C6 /* LaunchScreen.storyboard */; };
 		0208EB4825B3878A00FBD4C6 /* DeronCalbertGMGithubDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EB4725B3878A00FBD4C6 /* DeronCalbertGMGithubDemoTests.swift */; };
 		0208EB5325B3878A00FBD4C6 /* DeronCalbertGMGithubDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EB5225B3878A00FBD4C6 /* DeronCalbertGMGithubDemoUITests.swift */; };
+		1195A51CAB2A3C01FA72CFDB /* Pods_DeronCalbertGMGithubDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB069D6C887ABF802E574E95 /* Pods_DeronCalbertGMGithubDemoTests.framework */; };
+		20136800E7EA7CC04B15BDF2 /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B59C6E32CE66AB120CDBEFA /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework */; };
+		DFAF2F78E2C1B54AAE269756 /* Pods_DeronCalbertGMGithubDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E0C63B536D87E6CFBBA0D8 /* Pods_DeronCalbertGMGithubDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		0208EB4E25B3878A00FBD4C6 /* DeronCalbertGMGithubDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeronCalbertGMGithubDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0208EB5225B3878A00FBD4C6 /* DeronCalbertGMGithubDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeronCalbertGMGithubDemoUITests.swift; sourceTree = "<group>"; };
 		0208EB5425B3878A00FBD4C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B59C6E32CE66AB120CDBEFA /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29756561B4EFEB194B93F7EF /* Pods-DeronCalbertGMGithubDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeronCalbertGMGithubDemoTests.release.xcconfig"; path = "Target Support Files/Pods-DeronCalbertGMGithubDemoTests/Pods-DeronCalbertGMGithubDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		2B548C4B2C67F02520635713 /* Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-DeronCalbertGMGithubDemoTests/Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C5F1800EF021238BE525424 /* Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0E0C63B536D87E6CFBBA0D8 /* Pods_DeronCalbertGMGithubDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeronCalbertGMGithubDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B305613E597E4BED0C5C16 /* Pods-DeronCalbertGMGithubDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeronCalbertGMGithubDemo.release.xcconfig"; path = "Target Support Files/Pods-DeronCalbertGMGithubDemo/Pods-DeronCalbertGMGithubDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D306CE20C0CA7C231C6EA166 /* Pods-DeronCalbertGMGithubDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeronCalbertGMGithubDemo.debug.xcconfig"; path = "Target Support Files/Pods-DeronCalbertGMGithubDemo/Pods-DeronCalbertGMGithubDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DB069D6C887ABF802E574E95 /* Pods_DeronCalbertGMGithubDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeronCalbertGMGithubDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B3FB91A6BCC977E970ED8D /* Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAF2F78E2C1B54AAE269756 /* Pods_DeronCalbertGMGithubDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1195A51CAB2A3C01FA72CFDB /* Pods_DeronCalbertGMGithubDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20136800E7EA7CC04B15BDF2 /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				0208EB4625B3878A00FBD4C6 /* DeronCalbertGMGithubDemoTests */,
 				0208EB5125B3878A00FBD4C6 /* DeronCalbertGMGithubDemoUITests */,
 				0208EB2E25B3878800FBD4C6 /* Products */,
+				44FE5215422B56A2FDB3248A /* Pods */,
+				E3DC06507494482667158EC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = DeronCalbertGMGithubDemoUITests;
 			sourceTree = "<group>";
 		};
+		44FE5215422B56A2FDB3248A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D306CE20C0CA7C231C6EA166 /* Pods-DeronCalbertGMGithubDemo.debug.xcconfig */,
+				C6B305613E597E4BED0C5C16 /* Pods-DeronCalbertGMGithubDemo.release.xcconfig */,
+				9C5F1800EF021238BE525424 /* Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests.debug.xcconfig */,
+				F1B3FB91A6BCC977E970ED8D /* Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests.release.xcconfig */,
+				2B548C4B2C67F02520635713 /* Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig */,
+				29756561B4EFEB194B93F7EF /* Pods-DeronCalbertGMGithubDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3DC06507494482667158EC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0E0C63B536D87E6CFBBA0D8 /* Pods_DeronCalbertGMGithubDemo.framework */,
+				0B59C6E32CE66AB120CDBEFA /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework */,
+				DB069D6C887ABF802E574E95 /* Pods_DeronCalbertGMGithubDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0208EB5725B3878A00FBD4C6 /* Build configuration list for PBXNativeTarget "DeronCalbertGMGithubDemo" */;
 			buildPhases = (
+				B911F594896D73FF3A398937 /* [CP] Check Pods Manifest.lock */,
 				0208EB2925B3878800FBD4C6 /* Sources */,
 				0208EB2A25B3878800FBD4C6 /* Frameworks */,
 				0208EB2B25B3878800FBD4C6 /* Resources */,
+				BC439D89314AD4A5F922F262 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0208EB5A25B3878A00FBD4C6 /* Build configuration list for PBXNativeTarget "DeronCalbertGMGithubDemoTests" */;
 			buildPhases = (
+				80CF5994A743DF5E002F5E76 /* [CP] Check Pods Manifest.lock */,
 				0208EB3F25B3878A00FBD4C6 /* Sources */,
 				0208EB4025B3878A00FBD4C6 /* Frameworks */,
 				0208EB4125B3878A00FBD4C6 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0208EB5D25B3878A00FBD4C6 /* Build configuration list for PBXNativeTarget "DeronCalbertGMGithubDemoUITests" */;
 			buildPhases = (
+				E1D886BAC266EA0E1893280E /* [CP] Check Pods Manifest.lock */,
 				0208EB4A25B3878A00FBD4C6 /* Sources */,
 				0208EB4B25B3878A00FBD4C6 /* Frameworks */,
 				0208EB4C25B3878A00FBD4C6 /* Resources */,
+				1E4139C5FBD0537E0199DFBC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E4139C5FBD0537E0199DFBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80CF5994A743DF5E002F5E76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeronCalbertGMGithubDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B911F594896D73FF3A398937 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeronCalbertGMGithubDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC439D89314AD4A5F922F262 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeronCalbertGMGithubDemo/Pods-DeronCalbertGMGithubDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeronCalbertGMGithubDemo/Pods-DeronCalbertGMGithubDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeronCalbertGMGithubDemo/Pods-DeronCalbertGMGithubDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1D886BAC266EA0E1893280E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0208EB2925B3878800FBD4C6 /* Sources */ = {
@@ -433,6 +582,7 @@
 		};
 		0208EB5825B3878A00FBD4C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D306CE20C0CA7C231C6EA166 /* Pods-DeronCalbertGMGithubDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,6 +603,7 @@
 		};
 		0208EB5925B3878A00FBD4C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B305613E597E4BED0C5C16 /* Pods-DeronCalbertGMGithubDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +624,7 @@
 		};
 		0208EB5B25B3878A00FBD4C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B548C4B2C67F02520635713 /* Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +647,7 @@
 		};
 		0208EB5C25B3878A00FBD4C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29756561B4EFEB194B93F7EF /* Pods-DeronCalbertGMGithubDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +670,7 @@
 		};
 		0208EB5E25B3878A00FBD4C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C5F1800EF021238BE525424 /* Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +691,7 @@
 		};
 		0208EB5F25B3878A00FBD4C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1B3FB91A6BCC977E970ED8D /* Pods-DeronCalbertGMGithubDemo-DeronCalbertGMGithubDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
