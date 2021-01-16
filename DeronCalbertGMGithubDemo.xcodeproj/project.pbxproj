@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		0208EB3D25B3878A00FBD4C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0208EB3B25B3878A00FBD4C6 /* LaunchScreen.storyboard */; };
 		0208EB4825B3878A00FBD4C6 /* DeronCalbertGMGithubDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EB4725B3878A00FBD4C6 /* DeronCalbertGMGithubDemoTests.swift */; };
 		0208EB5325B3878A00FBD4C6 /* DeronCalbertGMGithubDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EB5225B3878A00FBD4C6 /* DeronCalbertGMGithubDemoUITests.swift */; };
+		0208EB7425B39C6400FBD4C6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EB7325B39C6400FBD4C6 /* MainViewModel.swift */; };
+		0208EB8725B39E1F00FBD4C6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EB8625B39E1F00FBD4C6 /* NetworkManager.swift */; };
+		0208EB8C25B39E3600FBD4C6 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EB8B25B39E3600FBD4C6 /* GitHubService.swift */; };
 		1195A51CAB2A3C01FA72CFDB /* Pods_DeronCalbertGMGithubDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB069D6C887ABF802E574E95 /* Pods_DeronCalbertGMGithubDemoTests.framework */; };
 		20136800E7EA7CC04B15BDF2 /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B59C6E32CE66AB120CDBEFA /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework */; };
 		DFAF2F78E2C1B54AAE269756 /* Pods_DeronCalbertGMGithubDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E0C63B536D87E6CFBBA0D8 /* Pods_DeronCalbertGMGithubDemo.framework */; };
@@ -52,6 +55,9 @@
 		0208EB4E25B3878A00FBD4C6 /* DeronCalbertGMGithubDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeronCalbertGMGithubDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0208EB5225B3878A00FBD4C6 /* DeronCalbertGMGithubDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeronCalbertGMGithubDemoUITests.swift; sourceTree = "<group>"; };
 		0208EB5425B3878A00FBD4C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0208EB7325B39C6400FBD4C6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		0208EB8625B39E1F00FBD4C6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0208EB8B25B39E3600FBD4C6 /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
 		0B59C6E32CE66AB120CDBEFA /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29756561B4EFEB194B93F7EF /* Pods-DeronCalbertGMGithubDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeronCalbertGMGithubDemoTests.release.xcconfig"; path = "Target Support Files/Pods-DeronCalbertGMGithubDemoTests/Pods-DeronCalbertGMGithubDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		2B548C4B2C67F02520635713 /* Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-DeronCalbertGMGithubDemoTests/Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,12 +122,12 @@
 		0208EB2F25B3878800FBD4C6 /* DeronCalbertGMGithubDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0208EB3025B3878800FBD4C6 /* AppDelegate.swift */,
-				0208EB3225B3878800FBD4C6 /* SceneDelegate.swift */,
-				0208EB3425B3878800FBD4C6 /* ViewController.swift */,
-				0208EB3625B3878800FBD4C6 /* Main.storyboard */,
-				0208EB3925B3878A00FBD4C6 /* Assets.xcassets */,
-				0208EB3B25B3878A00FBD4C6 /* LaunchScreen.storyboard */,
+				0208EB8525B39E0C00FBD4C6 /* Services */,
+				0208EB8425B39DEE00FBD4C6 /* Managers */,
+				0208EB8325B39CCE00FBD4C6 /* Resources */,
+				0208EB8225B39C8D00FBD4C6 /* StoryBoards */,
+				0208EB7025B39BCF00FBD4C6 /* View Controllers */,
+				0208EB6D25B39B3400FBD4C6 /* AppSceneDelegate */,
 				0208EB3E25B3878A00FBD4C6 /* Info.plist */,
 			);
 			path = DeronCalbertGMGithubDemo;
@@ -145,6 +151,73 @@
 			path = DeronCalbertGMGithubDemoUITests;
 			sourceTree = "<group>";
 		};
+		0208EB6D25B39B3400FBD4C6 /* AppSceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0208EB3225B3878800FBD4C6 /* SceneDelegate.swift */,
+				0208EB3025B3878800FBD4C6 /* AppDelegate.swift */,
+			);
+			name = AppSceneDelegate;
+			sourceTree = "<group>";
+		};
+		0208EB7025B39BCF00FBD4C6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0208EB7125B39C2200FBD4C6 /* MainViewController */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0208EB7125B39C2200FBD4C6 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0208EB7225B39C3800FBD4C6 /* ViewModel */,
+				0208EB3425B3878800FBD4C6 /* ViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		0208EB7225B39C3800FBD4C6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0208EB7325B39C6400FBD4C6 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0208EB8225B39C8D00FBD4C6 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				0208EB3625B3878800FBD4C6 /* Main.storyboard */,
+				0208EB3B25B3878A00FBD4C6 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		0208EB8325B39CCE00FBD4C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0208EB3925B3878A00FBD4C6 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0208EB8425B39DEE00FBD4C6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0208EB8625B39E1F00FBD4C6 /* NetworkManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		0208EB8525B39E0C00FBD4C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0208EB8B25B39E3600FBD4C6 /* GitHubService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		44FE5215422B56A2FDB3248A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +228,6 @@
 				2B548C4B2C67F02520635713 /* Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig */,
 				29756561B4EFEB194B93F7EF /* Pods-DeronCalbertGMGithubDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -409,7 +481,10 @@
 			files = (
 				0208EB3525B3878800FBD4C6 /* ViewController.swift in Sources */,
 				0208EB3125B3878800FBD4C6 /* AppDelegate.swift in Sources */,
+				0208EB8725B39E1F00FBD4C6 /* NetworkManager.swift in Sources */,
 				0208EB3325B3878800FBD4C6 /* SceneDelegate.swift in Sources */,
+				0208EB8C25B39E3600FBD4C6 /* GitHubService.swift in Sources */,
+				0208EB7425B39C6400FBD4C6 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
