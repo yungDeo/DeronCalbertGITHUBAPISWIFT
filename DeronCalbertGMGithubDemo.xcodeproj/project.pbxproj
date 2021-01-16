@@ -18,6 +18,8 @@
 		0208EB7425B39C6400FBD4C6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EB7325B39C6400FBD4C6 /* MainViewModel.swift */; };
 		0208EB8725B39E1F00FBD4C6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EB8625B39E1F00FBD4C6 /* NetworkManager.swift */; };
 		0208EB8C25B39E3600FBD4C6 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EB8B25B39E3600FBD4C6 /* GitHubService.swift */; };
+		0208EBAB25B3AC3A00FBD4C6 /* GitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EBAA25B3AC3A00FBD4C6 /* GitService.swift */; };
+		0208EBB325B3ACF800FBD4C6 /* CommitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208EBB225B3ACF800FBD4C6 /* CommitModel.swift */; };
 		1195A51CAB2A3C01FA72CFDB /* Pods_DeronCalbertGMGithubDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB069D6C887ABF802E574E95 /* Pods_DeronCalbertGMGithubDemoTests.framework */; };
 		20136800E7EA7CC04B15BDF2 /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B59C6E32CE66AB120CDBEFA /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework */; };
 		DFAF2F78E2C1B54AAE269756 /* Pods_DeronCalbertGMGithubDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E0C63B536D87E6CFBBA0D8 /* Pods_DeronCalbertGMGithubDemo.framework */; };
@@ -58,6 +60,8 @@
 		0208EB7325B39C6400FBD4C6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		0208EB8625B39E1F00FBD4C6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0208EB8B25B39E3600FBD4C6 /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		0208EBAA25B3AC3A00FBD4C6 /* GitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitService.swift; sourceTree = "<group>"; };
+		0208EBB225B3ACF800FBD4C6 /* CommitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitModel.swift; sourceTree = "<group>"; };
 		0B59C6E32CE66AB120CDBEFA /* Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeronCalbertGMGithubDemo_DeronCalbertGMGithubDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29756561B4EFEB194B93F7EF /* Pods-DeronCalbertGMGithubDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeronCalbertGMGithubDemoTests.release.xcconfig"; path = "Target Support Files/Pods-DeronCalbertGMGithubDemoTests/Pods-DeronCalbertGMGithubDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		2B548C4B2C67F02520635713 /* Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-DeronCalbertGMGithubDemoTests/Pods-DeronCalbertGMGithubDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 		0208EB2F25B3878800FBD4C6 /* DeronCalbertGMGithubDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0208EBA925B3AC0300FBD4C6 /* Protocol */,
+				0208EB9025B3A83F00FBD4C6 /* Model */,
 				0208EB8525B39E0C00FBD4C6 /* Services */,
 				0208EB8425B39DEE00FBD4C6 /* Managers */,
 				0208EB8325B39CCE00FBD4C6 /* Resources */,
@@ -216,6 +222,22 @@
 				0208EB8B25B39E3600FBD4C6 /* GitHubService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		0208EB9025B3A83F00FBD4C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0208EBB225B3ACF800FBD4C6 /* CommitModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0208EBA925B3AC0300FBD4C6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0208EBAA25B3AC3A00FBD4C6 /* GitService.swift */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 		44FE5215422B56A2FDB3248A /* Pods */ = {
@@ -483,7 +505,9 @@
 				0208EB3125B3878800FBD4C6 /* AppDelegate.swift in Sources */,
 				0208EB8725B39E1F00FBD4C6 /* NetworkManager.swift in Sources */,
 				0208EB3325B3878800FBD4C6 /* SceneDelegate.swift in Sources */,
+				0208EBAB25B3AC3A00FBD4C6 /* GitService.swift in Sources */,
 				0208EB8C25B39E3600FBD4C6 /* GitHubService.swift in Sources */,
+				0208EBB325B3ACF800FBD4C6 /* CommitModel.swift in Sources */,
 				0208EB7425B39C6400FBD4C6 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
