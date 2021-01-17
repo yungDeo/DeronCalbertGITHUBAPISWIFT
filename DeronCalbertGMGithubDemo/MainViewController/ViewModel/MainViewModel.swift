@@ -15,11 +15,12 @@ class MainViewModel {
     }
     
     func getCommits(completion:@escaping (_ completed:Bool)->Void) {
-        service.getCommits(owner: "octocat", repo: "hello-world", page: "0"){commit in
-            completion(true)
+        service.getCommits(owner: "AlamoFire", repo: "AlamoFire", page: "0"){commit in
+            
             if let commit = commit  {
                 self.commits.append(contentsOf: commit)
             }
+            completion(true)
         }
     }
 }
