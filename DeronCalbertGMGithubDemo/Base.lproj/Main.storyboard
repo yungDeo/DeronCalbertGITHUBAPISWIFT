@@ -27,24 +27,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W3P-ia-5zl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="W3P-ia-5zl">
+                                                    <rect key="frame" x="8" y="8" width="398" height="88"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyS-g4-KMp">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyS-g4-KMp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="398" height="46"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0p-qz-AC3">
-                                                            <rect key="frame" x="0.0" y="34.5" width="414" height="35"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="50" width="398" height="13.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJC-p2-jtf">
-                                                            <rect key="frame" x="0.0" y="69.5" width="414" height="34.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJC-p2-jtf">
+                                                            <rect key="frame" x="0.0" y="67.5" width="398" height="20.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -52,10 +52,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="W3P-ia-5zl" secondAttribute="bottom" id="Kow-j5-r6p"/>
-                                                <constraint firstItem="W3P-ia-5zl" firstAttribute="top" secondItem="hBl-Vn-9h0" secondAttribute="top" id="Pwr-Lm-oiG"/>
-                                                <constraint firstItem="W3P-ia-5zl" firstAttribute="leading" secondItem="hBl-Vn-9h0" secondAttribute="leading" id="VKs-qh-K16"/>
-                                                <constraint firstAttribute="trailing" secondItem="W3P-ia-5zl" secondAttribute="trailing" id="sSO-z4-tUI"/>
+                                                <constraint firstAttribute="bottom" secondItem="W3P-ia-5zl" secondAttribute="bottom" constant="8" id="Kow-j5-r6p"/>
+                                                <constraint firstItem="W3P-ia-5zl" firstAttribute="top" secondItem="hBl-Vn-9h0" secondAttribute="top" constant="8" id="Pwr-Lm-oiG"/>
+                                                <constraint firstItem="W3P-ia-5zl" firstAttribute="leading" secondItem="hBl-Vn-9h0" secondAttribute="leading" constant="8" id="VKs-qh-K16"/>
+                                                <constraint firstAttribute="trailing" secondItem="W3P-ia-5zl" secondAttribute="trailing" constant="8" id="sSO-z4-tUI"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
