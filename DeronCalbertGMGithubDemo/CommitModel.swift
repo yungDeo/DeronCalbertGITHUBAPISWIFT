@@ -82,7 +82,7 @@ struct Commit: Codable {
 // MARK: - CommitAuthor
 struct CommitAuthor: Codable {
     let name, email: String?
-    let date: Date?
+    let date: String?
 }
 
 // MARK: - Tree
