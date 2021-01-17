@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommitCell" rowHeight="104" id="ao3-xW-fdT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommitCell" rowHeight="104" id="ao3-xW-fdT" customClass="CommitTableViewCell" customModule="DeronCalbertGMGithubDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ao3-xW-fdT" id="hBl-Vn-9h0">
@@ -58,6 +58,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="W3P-ia-5zl" secondAttribute="trailing" id="sSO-z4-tUI"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="kyS-g4-KMp" id="Bjz-OQ-Qve"/>
+                                            <outlet property="commitHashLabel" destination="b0p-qz-AC3" id="Rff-Qz-48n"/>
+                                            <outlet property="commitMessageLabel" destination="nJC-p2-jtf" id="6Ml-T5-1zz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

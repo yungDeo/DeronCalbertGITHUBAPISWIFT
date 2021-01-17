@@ -9,14 +9,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
-    var window: UIWindow? {
-        didSet {
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let viewController = storyboard.instantiateInitialViewController() as? ViewController
-            viewController?.viewModel = MainViewModel(service: GitHubService())
-            window?.rootViewController = viewController
-        }
-    }
+    var window: UIWindow? 
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -24,6 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        if  let viewController = storyboard.instantiateInitialViewController() as? ViewController {
+            viewController.viewModel = MainViewModel(service: GitHubService())
+            window?.rootViewController = viewController
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

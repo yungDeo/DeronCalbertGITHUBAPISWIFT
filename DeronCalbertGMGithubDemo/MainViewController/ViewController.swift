@@ -10,11 +10,17 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var viewModel:MainViewModel!
-    static let cellIndentifier = "CommitCell"
+    let cellIdentifier = "CommitCell"
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        viewModel.getCommits() {
+            finished in
+            print(finished)
+            //print(self.viewModel.commits[0])
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -29,8 +35,18 @@ extension ViewController:UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        return commitCell(tableView: tableView, indexPath: indexPath) ?? UITableViewCell()
     }
-    
+    func commitCell( tableView:UITableView,indexPath:IndexPath) ->CommitTableViewCell? {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier ) as? CommitTableViewCell {
+            cell.authorLabel.text = viewModel.commits[indexPath.row].commit?.author?.name
+            cell.commitHashLabel.text = viewModel.commits[indexPath.row].commit?.tree?.sha
+                    cell.commitMessageLabel.text = viewModel.commits[indexPath.row].commit?.message
+            
+            return cell
+        }
+        return nil
+    }
     
     
 }
