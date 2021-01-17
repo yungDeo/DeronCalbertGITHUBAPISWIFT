@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         viewModel.getCommits() {
             finished in
             print(finished)
+            self.tableView.reloadData()
             //print(self.viewModel.commits[0])
         }
         // Do any additional setup after loading the view.

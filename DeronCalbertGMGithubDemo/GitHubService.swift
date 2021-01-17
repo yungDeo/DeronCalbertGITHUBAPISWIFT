@@ -24,6 +24,7 @@ class GitHubService:GitService {
         
         NetworkManager.shared.getTokenNetworkCall(for: path, allQueryItems) { (data,error) in
             if let data = data {
+                
                 do {
                     let commits = try decoder.decode(CommitModel.self, from: data)
                     
