@@ -7,5 +7,9 @@
 
 import Foundation
 protocol GitService {
-    func getCommits()
+    
+    typealias CommitCompletion = (CommitModel?)->Void
+    
+    
+    func getCommits(owner:String,repo:String,page:String,completion: @escaping CommitCompletion)
 }

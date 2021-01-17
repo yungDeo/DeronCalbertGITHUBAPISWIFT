@@ -7,23 +7,25 @@
 
 import Foundation
 import Alamofire
+
 class NetworkManager {
-    let sessionManager: Session
-    let baseURL = URL(string: "https://api.github.com")!
+    private let sessionManager: Session
+    private let baseURL = URL(string: "https://api.github.com")!
     
     
     
     // MARK: - Singleton Accessors
-    fileprivate static let shared: NetworkManager = {
-        let instance = NetworkManager()
-        return instance
-    }()
+    public static let shared:NetworkManager  = NetworkManager()
+    
     private init() {
         let config = URLSessionConfiguration.default
         config.timeoutIntervalForRequest = 15
         sessionManager = Session(configuration: config )
     }
-    func getTokenNetworkCall( for path: String, _ queryItems: [URLQueryItem] = [], completion: @escaping (_ data: Data?, _ error: NSError?) -> Void) {
+    
+    func getTokenNetworkCall( for path: String,
+                              _ queryItems: [URLQueryItem] = [],headers:HTTPHeaders = HTTPHeaders(["accept":"application/vnd.github.v3+json"])
+                              , completion: @escaping (_ data: Data?, _ error: NSError?) -> Void) {
         
         let url = baseURL.appendingPathComponent(path)
         var urlComponents = URLComponents(string: url.absoluteString)
@@ -32,7 +34,7 @@ class NetworkManager {
         guard let requesturl = urlComponents?.url else {
             return
         }
-        let request = sessionManager.request(requesturl, method: .get)
+        let request = sessionManager.request(requesturl, method: .get,headers:headers )
         
         request.responseJSON { payload in
             switch payload.result{
@@ -44,8 +46,8 @@ class NetworkManager {
                 }
                 switch statusCode {
                 case 200:
-                    completion( payload.data ?? Data(), nil )
-                case 401, 400:
+                    completion( payload.data , nil )
+                case 401, 400,500,404:
                     completion(nil, self.processError(response: payload.data ?? Data()))
                     
                 default:

@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias ComitModel = [ComitModelElement]
+typealias CommitModel = [ComitModelElement]
 
 // MARK: - ComitModelElement
 struct ComitModelElement: Codable {

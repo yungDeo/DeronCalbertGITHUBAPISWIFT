@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+class MainViewModel {
+    let service:GitService
+    var commits:CommitModel = []
+    init(service:GitService) {
+        self.service = service
+    }
+    
+    func getCommits(completion:@escaping (_ completed:Bool)->Void) {
+        service.getCommits(owner: "octocat", repo: "hello-world", page: "0"){commit in
+            completion(true)
+            if let commit = commit  {
+                self.commits.append(contentsOf: commit)
+            }
+        }
+    }
+}
