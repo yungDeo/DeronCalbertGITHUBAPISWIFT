@@ -29,5 +29,16 @@ class DeronCalbertGMGithubDemoTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    //MARK:- View Model Tests
+    
+    //MARK:- Test Helper
+    func testEmptyResponse() {
+        let viewModel = MainViewModel(service: EasyMockGitHubService(commit: []))
+        XCTAssertEqual(0, viewModel.commits.count)
+    }
+    func testNilResponse() {
+        let viewModel = MainViewModel(service: EasyMockGitHubService(commit: nil))
+        XCTAssertEqual(0, viewModel.commits.count)
+    }
+    
 }

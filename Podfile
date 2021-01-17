@@ -6,7 +6,8 @@ target 'DeronCalbertGMGithubDemo' do
   use_frameworks!
 
   # Pods for DeronCalbertGMGithubDemo
-  pod 'Alamofire'
+  pod 'Alamofire' , '~> 5.3.0'
+  pod 'ReachabilitySwift' , '~> 5.0'
   
   target 'DeronCalbertGMGithubDemoTests' do
     inherit! :search_paths
