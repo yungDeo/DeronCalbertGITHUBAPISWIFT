@@ -22,7 +22,7 @@ class GitHubService:GitService {
        
         let decoder = JSONDecoder()
         
-        NetworkManager.shared.getTokenNetworkCall(for: path, allQueryItems) { (data,error) in
+        NetworkManager.shared.getTokenNetworkCall(for: path, allQueryItems) { (data) in
             if let data = data {
                 
                 do {

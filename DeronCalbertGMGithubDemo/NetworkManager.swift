@@ -7,11 +7,12 @@
 
 import Foundation
 import Alamofire
+import OSLog
 
 class NetworkManager {
     private let sessionManager: Session
     private let baseURL = URL(string: "https://api.github.com")!
-    
+    private let logger = Logger(subsystem: "NetworkManager", category: "badResponse")
     
     
     // MARK: - Singleton Accessors
@@ -25,7 +26,7 @@ class NetworkManager {
     
     func getTokenNetworkCall( for path: String,
                               _ queryItems: [URLQueryItem] = [],headers:HTTPHeaders = HTTPHeaders(["accept":"application/vnd.github.v3+json"])
-                              , completion: @escaping (_ data: Data?, _ error: NSError?) -> Void) {
+                              , completion: @escaping (_ data: Data?)->Void ) {
         
         let url = baseURL.appendingPathComponent(path)
         var urlComponents = URLComponents(string: url.absoluteString)
@@ -37,41 +38,29 @@ class NetworkManager {
         let request = sessionManager.request(requesturl, method: .get,headers:headers )
         
         request.responseJSON { payload in
+            print(payload)
             switch payload.result{
             case .success:
                 guard let statusCode = payload.response?.statusCode else {
                     
-                    completion(nil, nil)
+                    completion(nil)
                     return
                 }
                 switch statusCode {
                 case 200:
-                    completion( payload.data , nil )
+                    completion( payload.data )
                 case 401, 400,500,404:
-                    completion(nil, self.processError(response: payload.data ?? Data()))
+                    completion(nil)
                     
                 default:
-                    completion(nil, self.processError(response: payload.data ?? Data()))
+                    completion(nil)
                     
                 }
-            case .failure(let _ ):
-                completion(nil,nil)
+            case .failure:
+                completion(nil)
             }
         }
         
     }
-
-    private func processError(response: Data) -> NSError {
-
-        let decoder = JSONDecoder()
-        do {
-//            let model = try decoder.decode(ErrorResponse.self, from: response)
-            return NSError()
-        } catch let(jsonError) {
-            print(jsonError.localizedDescription)
-            
-            return NSError()
-        }
-
-    }
 }
+
